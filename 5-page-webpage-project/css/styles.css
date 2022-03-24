@@ -1,0 +1,463 @@
+body {
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+
+body > main {
+    display: flex;
+    align-items: center;
+}
+
+/* Header */
+
+body > header {
+    display: flex;
+    justify-content: center;
+}
+
+body > header > h1 {
+    color: #0099ff;
+    font-size: 2.3rem;
+    text-align: center;
+    border: 3px solid white;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 4px;
+    padding: 0.5em;
+}
+
+/* Navigation */
+
+body > nav {
+    display: flex;
+    justify-content: center;
+}
+
+body > nav > ul {
+    display: flex;
+    flex-direction: row;
+}
+
+body > nav > ul > li {
+    list-style-type: none;
+}
+
+body > nav > ul > li > a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 1em;
+    transition: 300ms ease;
+    color: rgba(31, 31, 31, 1);
+}
+
+body > nav > ul > li > a:hover {
+    color: #0099ff;
+}
+
+body > nav > ul > li > a:active {
+    border: 3px solid #0099ff;
+    border-radius: 4px;
+}
+
+body > nav > div {
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    position: relative;
+}
+
+.hamburger-links {
+    display: none;
+}
+
+.hamburger-links > a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3rem;
+    padding: 0.5em;
+    color: rgba(31, 31, 31, 1);
+    transition: 300ms ease;
+    z-index: 99;
+}
+
+.hamburger-links > a:hover {
+    color: #0099ff;
+}
+
+.hamburger-menu .hamburger-links {
+    transition: 300ms ease;
+}
+
+.hamburger-menu:hover .hamburger-links {
+    display: block;
+}
+
+/* First Background image with logo */
+
+.showcase {
+    display: flex;
+    justify-content: center;
+    background-image: url(../images/showcase-background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+}
+
+.showcase > img {
+    padding: 5em;
+    filter: opacity(90%);
+}
+
+/* Second Section Styling
+   also styling for enquiry page */
+
+.second-showcase {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(../images/second-showcase-background.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+}
+
+.second-showcase > img {
+    padding: 5em;
+}
+
+.second-showcase > .enquiry-form {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 3em;
+}
+
+.second-showcase > .enquiry-form > form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 60%;
+    padding: 1em;
+    border: 2px solid white;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: #074e7d 0px 0px 10px 5px;
+}
+
+.second-showcase > .enquiry-form > form > input:required {
+    border: 2px solid darkred;
+    border-radius: 2px;
+}
+
+#email-body {
+    height: 1em;
+    -moz-transition: height 500ms ease;
+    transition: height 500ms ease;
+}
+
+#email-body:focus { 
+    height: 10em;
+}
+
+.second-showcase > .enquiry-form > form > label {
+    padding-top: 1em;
+}
+
+.second-showcase > .enquiry-form > form > select {
+    margin: 0.3em;
+}
+
+.second-showcase > .enquiry-form > #submit-button {
+    color: rgba(31, 31, 31, 1);
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    transition: 300ms ease;
+    width: 40%;
+}
+
+.second-showcase > .enquiry-form > #submit-button:hover {
+    transform: scale(1.2 , 1.2);
+    color: #0099ff;
+    cursor: pointer;
+}
+
+/* Styling for images */
+
+.image-showcase {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    /* padding: 2em; */
+}
+
+.image-showcase > div > img {
+    border: 4px solid sandybrown;
+    border-radius: 4px;
+    transition: ease-in-out 2s;
+    box-shadow: 0px 0px 10px 5px;
+    color: #074e7d;
+}
+
+.image-showcase > div > img:hover {
+    transform: scale(1.5, 1.5) rotateZ(360deg);
+}
+
+.image-showcase > div > h1 {
+    color: #0099ff;
+    text-align: center;
+    width: 10em;
+    font-size: 2rem;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.image-showcase > div > h2 {
+    text-align: center;
+    color: rgba(31, 31, 31, 1);
+    width: 7em;
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+    border-radius: 4px;
+}
+
+.image-showcase > div > p {
+    text-align: center;
+    color: rgba(31, 31, 31, 1);
+    padding: 2px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: #074e7d 0px 0px 10px 5px;
+}
+
+.image-showcase > div > ol {
+    width: 11.8em;
+    font-size: 1.5rem;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid white;
+    border-radius: 4px;
+    box-shadow: #074e7d 0px 0px 10px 5px;
+}
+
+.image-showcase > div > ol > li {
+    color: rgba(31, 31, 31, 1);
+}
+
+.image-showcase > div > ol > dd {
+    color: rgba(31, 31, 31, 1);
+    font-size: 1rem;
+    padding: 10px;
+    text-align: left;
+}
+
+.image-showcase > div > ol > h2 {
+    color: rgba(31, 31, 31, 1);
+}
+
+.image-showcase > div > input {
+    color: rgba(31, 31, 31, 1);
+    font-family: 'Oswald', sans-serif;
+    width: 100%;
+    font-size: 2rem;
+    transition: 300ms ease;
+}
+
+.image-showcase > div > input:hover {
+    transform: scale(1.2 , 1.2);
+    color: #0099ff;
+    cursor: pointer;
+}
+
+/* Description for images */
+
+.description {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+    padding: 1em;
+    background-color: white;
+    border-top: solid 4px sandybrown;
+    border-bottom: solid 4px sandybrown;
+    
+}
+
+.description h2 {
+    color: rgba(31, 31, 31, 1);
+    padding: 1em;
+    margin: auto;
+}
+
+.description p {
+    color: rgba(31, 31, 31, 1);
+    border-top: solid 4px sandybrown;
+    border-bottom: solid 4px sandybrown;
+    padding: 1em;
+    width: 50%;
+    margin: auto;
+}
+
+.description img {
+    margin: auto;
+    height: 50%;
+    border: 4px solid sandybrown;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 5px;
+    color: #074e7d;
+}
+
+/* footer styling */
+
+footer {
+    border-top: solid 4px sandybrown;
+    border-bottom: solid 4px sandybrown;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+.footer-info > h3 {
+    color: rgba(31, 31, 31, 1);
+    display: flex;
+    justify-content: center;
+}
+
+.footer-info > p {
+    color: rgba(31, 31, 31, 1);
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+footer > div {
+    display: flex;
+    justify-content: center;
+}
+
+footer > div > a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin: 0.5em;
+    transition: 300ms ease;
+    color: rgba(31, 31, 31, 1);
+}
+
+footer > div > a:hover {
+    color: #0099ff;
+}
+
+footer > div > a:active {
+    border: 2px solid #0099ff;
+    border-radius: 2px;
+}
+
+.icons{
+    display: flex;
+    justify-content: center;
+}
+
+.icons a img {
+    width: 3em;
+    height: 3em;
+    padding: 10px;
+    transition: 300ms ease;
+}
+
+.icons a img:hover {
+    transform: scale(1.2 , 1.2);
+}
+
+/* #animate:hover {
+    position: relative;
+    animation: rotate 3s infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotateY(0deg);
+        transition: none;
+      }
+      to {
+        transform: rotateY(720deg);
+        transition: none;
+      }
+} */
+
+/* Media Query */
+
+/* Mobile */
+
+@media screen and (max-width: 400px) {
+    .showcase img {
+        padding: 0;
+        width: 40%;
+    }
+
+    .image-showcase h2 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    .image-showcase div {
+        padding: 2em;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .showcase img {
+        padding: 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .image-showcase h2 {
+        display: none;
+    }
+}
+
+/* Tablet / Small Laptop */
+
+@media screen and (max-width: 1024px) {
+    .showcase img {
+        padding: 0;
+        width: 60%;
+    }
+
+    nav a {
+        display: none;
+    }
+
+    .image-showcase div {
+        flex-shrink: inherit;
+        padding: 2em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    nav div {
+        display: none;
+    }
+
+}
+
+/* Larger Devices */
+
+@media screen and (min-width: 1280px) {
+    nav div {
+        display: none;
+    }
+}

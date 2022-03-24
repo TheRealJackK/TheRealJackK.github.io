@@ -1,0 +1,71 @@
+/* Element Over-ride */
+
+body {
+    font-family: 'MedievalSharp', cursive !important;
+    margin: 0;
+}
+
+nav > div > a > img {
+    width: 10em;
+}
+
+nav > div > div > ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+a {
+    color: black !important;
+    transition: 700ms !important;
+}
+
+#mainPageText {
+    color: #E2000F;
+}
+
+#mainPageImage {
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border: 3px solid #E2000F !important;
+}
+
+#cardText {
+    color: #FFEC00;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 4px;
+}
+
+/* Main Page Animation */
+
+a:hover {
+    color: #E2000F !important;
+}
+
+.gallery-left {
+    transition: 500ms ease;
+}
+
+.gallery-right {
+    transition: 500ms ease;
+}
+
+.gallery-bottom {
+    transition: 500ms ease;
+}
+
+.gallery-left:hover {
+    /* box-shadow: rgba(255, 255, 0, 0.4) -5px 5px, rgba(255, 255, 0, 0.3) -10px 10px, rgba(255, 255, 0, 0.2) -15px 15px, rgba(255, 255, 0, 0.1) -20px 20px, rgba(255, 255, 0, 0.05) -25px 25px; */
+    transform: scale(1.1, 1.1);
+    /* cursor: pointer; */
+}
+
+.gallery-right:hover {
+    /* box-shadow: rgba(255, 255, 0, 0.4) 5px 5px, rgba(255, 255, 0, 0.3) 10px 10px, rgba(255, 255, 0, 0.2) 15px 15px, rgba(255, 255, 0, 0.1) 20px 20px, rgba(255, 255, 0, 0.05) 25px 25px; */
+    transform: scale(1.1, 1.1);
+    /* cursor: pointer; */
+}
+
+.gallery-bottom:hover {
+    /* box-shadow: rgba(255, 255, 0, 0.4) 0px 5px, rgba(255, 255, 0, 0.3) 0px 10px, rgba(255, 255, 0, 0.2) 0px 15px, rgba(255, 255, 0, 0.1) 0px 20px, rgba(255, 255, 0, 0.05) 0px 25px; */
+    transform: scale(1.1, 1.1);
+    /* cursor: pointer; */
+}

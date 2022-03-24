@@ -1,0 +1,554 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <!-- <meta charset="UTF-8" /> -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel = "icon" href = "images/svg-icons/warhammer-icon.svg" type = "image/gif" />
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <!-- JavaScript Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet" />
+        <!-- My CSS -->
+        <link rel = "stylesheet" href = "css/styles.css" />
+        <!-- My JS -->
+        <script src = "js/script.js" defer></script>
+        <title>Games Workshop | Catalogue 2021</title>
+    </head>
+    <body>
+        <!-- Header & Navbar -->
+        <header id = "header" class = "container-fluid p-2">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top mb-5">
+            <div class="container-fluid">
+              <a class="navbar-brand" id = "home" href="#" onclick = "showPage('page1')"><img src = "images/main-page/gw.svg" alt = "logo" id = "logo" /></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" id = "mostpop" href="#" onclick = "showPage('page7')">Most Popular</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id = "40k" href="#" onclick = "showPage('page2')">Warhammer - 40,000</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id = "aos" href="#" onclick = "showPage('page3')">Warhammer - Age of Sigmar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id = "m-e" href="#" onclick = "showPage('page4')">Middle-Earth - Strategy Battle Game</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id = "b-l" href="#" onclick = "showPage('page5')">Black Library</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" id = "r-b" href="#" onclick = "showPage('page6')">Rule Books & Guides</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </header>
+        <div class = "container-fluid bg-light mt-5 pt-3 text-warning d-flex justify-content-center">
+          <img src = "https://www.games-workshop.com/resources/static/header-2017/GW-Xmas-Logo-2021-01.svg" alt = "christmas-logo" style = "width: 25em" />
+        </div>
+        <!-- Page 1 -->
+        <!-- First Row -->
+        <section class = "pages"  id = "page1">
+          <div class = "container-fluid bg-light text-danger d-flex justify-content-center">
+            <h2 id = "mainPageText">Build Your Army This Holiday</h2>
+          </div>
+          <div class = "container-fluid bg-light text-danger d-flex justify-content-center">
+            <svg width="50" height="50">
+              <circle cx="25" cy="25" r="20" stroke="#E2000F" fill='white' stroke-width="2" />
+              <polygon points="42,15 25,45, 8,15 " style="fill:none;stroke:#E2000F;stroke-width:2;fill-rule:evenodd;"/>
+              <line x1="25" y1="5" x2="25" y2="15" stroke="#E2000F" stroke-width="2" />
+            </svg>
+          </div>
+          <div class = "container-fluid bg-light text-white text-center d-flex flex-wrap justify-content-evenly">
+            <div class = "gallery-left card m-3">
+              <img src = "images/main-page/40k.jpg" id = "mainPageImage" class = "img-fluid border border-3 border-warning rounded" alt = "40k" />
+              <div class="card-img-overlay">
+                <h5 class="card-title fw-bold m-5" id = "cardText">Warhammer - 40,000</h5>
+                <p class="card-text fw-bold m-5" id = "cardText">Learn More</p>
+              </div>
+            </div>
+            <div class = "gallery-bottom card m-3">
+              <img src = "images/main-page/age-of-sigma.jpg" id = "mainPageImage" class = "img-fluid border border-3 border-warning rounded" alt = "age-of-sigmar" />
+              <div class="card-img-overlay">
+                <h5 class="card-title fw-bold m-5" id = "cardText">Warhammer - Age of Sigmar</h5>
+                <p class="card-text fw-bold m-5" id = "cardText">Learn More</p>
+              </div>
+            </div>
+            <div class = "gallery-right card m-3">
+              <img src = "images/main-page/middle-earth-2.jpg" id = "mainPageImage" class = "img-fluid border border-3 border-warning rounded" alt = "middle-earth" />
+              <div class="card-img-overlay">
+                <h5 class="card-title fw-bold m-5" id = "cardText">Middle-Earth - Strategy Battle Game</h5>
+                <p class="card-text fw-bold m-5" id = "cardText">Learn More</p>
+              </div>
+            </div>
+            <div class = "gallery-left card m-3">
+              <img src = "images/main-page/black-library.jpg" id = "mainPageImage" class = "img-fluid border border-3 border-warning rounded" alt = "age-of-sigmar" />
+              <div class="card-img-overlay">
+                <h5 class="card-title fw-bold m-5" id = "cardText">Black Library</h5>
+                <p class="card-text fw-bold m-5" id = "cardText">Learn More</p>
+              </div>
+            </div>
+            <div class = "gallery-bottom card m-3">
+              <img src = "images/main-page/rulebooks.jpg" id = "mainPageImage" class = "img-fluid border border-3 border-warning rounded" alt = "rulebooks" />
+              <div class="card-img-overlay">
+                <h5 class="card-title fw-bold m-5" id = "cardText">Rule Books & Guides</h5>
+                <p class="card-text fw-bold m-5" id = "cardText">Learn More</p>
+              </div>
+            </div>
+            <div class = "gallery-right card m-3" onclick = "redirect()">
+              <img src = "images/main-page/warhammer-community.jpg" id = "mainPageImage" class = "img-fluid border border-3 border-warning rounded" alt = "warhammer-community" />
+            </div>
+          </div>
+        </section>
+        <!-- Page 2 -->
+        <section class = "pages" id = "page2">
+          <div class = "container-fluid bg-light text-secondary d-flex justify-content-center">
+            <h2>Warhammer - 40,000</h2>
+          </div>
+          <!-- <div class = "container-fluid pt-3 bg-light text-secondary d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary m-2" onclick = "showPage('page1')">Return Home</button>
+          </div> -->
+          <!-- First Row -->
+          <div class="card-group bg-light">
+            <div class="card">
+              <img src="https://i.imgur.com/iC5xMu2.jpg" class="card-img-top" alt="SM-Combat-Patrol-Group" />
+              <div class="card-body">
+                <h5 class="card-title">Combat Patrol: Space Marines </h5>
+                <h5 class="card-title">$230.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Wield the unstoppable might of the Angels of Death with Combat Patrol: Space Marines. This boxed set provides you with all the units you need to get started or build on an existing force. The contents of this set have been specifically chosen to provide you with an ideal Space Marines force for Combat Patrol-sized games – approximately 25 Power Level's worth of miniatures.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/Q3trV64.jpg" class="card-img-top" alt="SM-Primaris-Intercessors" />
+              <div class="card-body">
+                <h5 class="card-title">Space Marine Primaris Intercessors</h5>
+                <h5 class="card-title">$98.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">A strong core of reliable and adaptable warriors that can lay down fire while advancing or holding down terrain is an invaluable aid to any tactician. In the case of strike forces bolstered by Primaris battle-brothers, this role is fulfilled by the Intercessor Squads. Capable of levelling overlapping salvoes of firepower, these squads often form the flexible fighting core of newly-founded Primaris Chapters – though of course many established Chapters have eagerly leveraged their abilities, fielding them alongside Tactical Squads.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/cz04qig.jpg" class="card-img-top" alt="SM-Tactical-Squad" />
+              <div class="card-body">
+                <h5 class="card-title">Space Marine Tactical Squad</h5>
+                <h5 class="card-title">$70.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Tactical Squads are the backbone of any Space Marine army. They hold ground; provide fire support and charge into bloody melees, as the ever-changing theatre of war dictates.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/27obF6s.jpg" class="card-img-top" alt="SM-Captain-Master" />
+              <div class="card-body">
+                <h5 class="card-title">Space Marine Captain with Master-crafted Heavy Bolt Rifle</h5>
+                <h5 class="card-title">$32.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Space Marines on the defence fight with a tenacious fury. Captains will take up heavy bolt rifles to lay down punishing fire and wear Gravis armour to withstand the foe's best attempts to dislodge them. Fighting in such a way, they are a symbol of the Space Marines' indomitable will to never fail.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/wdmvZHM.jpg" class="card-img-top" alt="SM-Land-Raider" />
+              <div class="card-body">
+                <h5 class="card-title">Space Marine Land Raider</h5>
+                <h5 class="card-title">$110.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Land Raider is the single most destructive weapon in the Adeptus Astartes' arsenal. Protected by bonded ceramite and adamantium armour, the Land Raider is impervious to all bar the most destructive weaponry. Equally impressive are its armaments - lascannon and heavy bolters allow the Land Raider to deliver punishing support fire capable of decimating enemy infantry and tanks alike. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/BT5e33o.jpg" class="card-img-top" alt="SM-Stormraven-Gunship" />
+              <div class="card-body">
+                <h5 class="card-title">Space Marine Stormraven Gunship</h5>
+                <h5 class="card-title">$130.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Stormraven Gunship is an armoured versatile craft that combines the role of dropship, armoured transport and strike craft.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Page 3 -->
+        <section class = "pages" id = "page3">
+          <div class = "container-fluid bg-light text-secondary d-flex justify-content-center">
+            <h2>Warhammer - Age Of Sigmar</h2>
+          </div>
+          <!-- <div class = "container-fluid pt-3 bg-light text-secondary d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary m-2" onclick = "showPage('page1')">Return Home</button>
+          </div> -->
+          <!-- First Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/9DcCwph.jpg" class="card-img-top" alt="AOS-vanquishers" />
+              <div class="card-body">
+                <h5 class="card-title">Vanquishers</h5>
+                <h5 class="card-title">$98.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Vanquishers are expert, greatsword-wielding warriors, well practised in counter-charging enemy units pinned in place by Liberators and Vindictors. The celestial greatswords they wield with preternatural skill are embedded with a shard of celestium realmstone, which these warriors meditate upon until they become one with their blades. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/igLC01I.jpg" class="card-img-top" alt="AOS-vigilors" />
+              <div class="card-body">
+                <h5 class="card-title">Vigilors</h5>
+                <h5 class="card-title">$98.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Vigilors are Thunderstrike-armoured advance scouts. Rangers who forge ahead of the main Stormcast Eternal forces, Vigilors function similarly to the Vanguard chamber for the newly forged Stormhosts composed mainly of Thunderstrike warriors. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/Uwd1r7P.jpg" class="card-img-top" alt="AOS-judicators" />
+              <div class="card-body">
+                <h5 class="card-title">Judicators</h5>
+                <h5 class="card-title">$105.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Judicators attack with speed and accuracy, with arcing, whistling volleys of arrows and bolts signalling their arrival in battle. The massed, howling forces of Chaos are their sworn, hated enemies, and they will soon feel the wrath of sigmarite crossbow bolts and hissing, crackling arrows of purest lightning. The Judicators disseminate their anger with stoic mercilessness, and leave nothing in their wake but death.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/58z6pci.jpg" class="card-img-top" alt="AOS-bastian-carthalos" />
+              <div class="card-body">
+                <h5 class="card-title">Lord-Commander Bastian Carthalos</h5>
+                <h5 class="card-title">$70.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">There is no higher rank in a Stormhost than Lord-Commander, and in the Hammers of Sigmar this esteemed position is held by Bastian Carthalos, the Thunderborn. Once reforged with the power of the ninth Great Bolt, Skjordamar, Carthalos is a master tactician and an indomitable warrior. Sigmar has once again unleashed this mighty warrior to oversee the many crusades undertaken by the Stormcast Eternals. Carthalos has also returned to the battlefield, where he fiercely smites his foes with his legendary warhammer, Uskavar, the Sunderer, while issuing commands to his allies and challenges to his enemies with a voice that booms like a thunderclap. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/vDhQILv.jpg" class="card-img-top" alt="AOS-fulminators" />
+              <div class="card-body">
+                <h5 class="card-title">Fulminators</h5>
+                <h5 class="card-title">$110.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Aggressive and bold, there is no foe the Fulminators dare not charge. A surge of celestial energy builds before the ground-shaking impetus of their onset, a crackling war-cloud that travels like a bow wave before their lowered stormstrike glaives. They are the tip of the Dracothian Guard spear, and they clear a path for all who follow.
+                </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/gJQ0iiZ.jpg" class="card-img-top" alt="AOS-stormcast-drake" />
+              <div class="card-body">
+                <h5 class="card-title">Lord-Celestant on Stardrake</h5>
+                <h5 class="card-title">$265.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Even amongst the gloried ranks of the Stormcast Eternals and the star-born hierarchy of the Children of Dracothion, only the mightiest and noblest are chosen to lead an Extremis Chamber. So infused with celestial power are the Lord-Celestant and Stardrake that they radiate azure energies. The power of the stars themselves is theirs to command…</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Page 4 -->  
+        <section class = "pages" id = "page4">
+          <div class = "container-fluid bg-light text-secondary d-flex justify-content-center">
+            <h2>Middle-Earth - Battle Strategy Game</h2>
+          </div>
+          <!-- <div class = "container-fluid pt-3 bg-light text-secondary d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary m-2" onclick = "showPage('page1')">Return Home</button>
+          </div> -->
+          <!-- First Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/JGijYbn.jpg" class="card-img-top" alt="ME-fellowship-of-the-ring" />
+              <div class="card-body">
+                <h5 class="card-title">Fellowship Of The Ring</h5>
+                <h5 class="card-title">$84.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">It was in Rivendell that Frodo made the decision to carry the Ring to Mordor and cast it into the fires of Mount Doom, thus ending its power forever. With him went eight companions, and collectively they were known as The Fellowship of the Ring.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/TG8MQZf.jpg" class="card-img-top" alt="ME-uruk-hai-scouts" />
+              <div class="card-body">
+                <h5 class="card-title">Uruk-hai Scouts</h5>
+                <h5 class="card-title">$70.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Uruk-hai Scouts are sent by Saruman to track down the Fellowship of the Ring, to bring any Halflings back to Isengard, and slay the rest of the members. Like all Uruk-hai they are aggressive, untiring warriors, who will march day and night in the pursuit of their quarry and fight them to the death when they catch up with them. They were, in part, responsible for the death of Boromir of Gondor and the breaking of the Fellowship at Amon Hen. The Uruk-hai Scouts are sent by Saruman to track down the Fellowship of the Ring, to bring any Halflings back to Isengard, and slay the rest of the members. Like all Uruk-hai they are aggressive, untiring warriors, who will march day and night in the pursuit of their quarry and fight them to the death when they catch up with them. They were, in part, responsible for the death of Boromir of Gondor and the breaking of the Fellowship at Amon Hen. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/uPdHEMM.jpg" class="card-img-top" alt="ME-galadhrim-warriors" />
+              <div class="card-body">
+                <h5 class="card-title">Galadhrim™ Warriors</h5>
+                <h5 class="card-title">$70.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Though the armies of the Elven Kingdoms seldom march to open war, they guard many of Middle-earth's chief havens, and shield many lands that would have no hope of protecting themselves. Amongst this glittering host are the armies of Lothlórien, who only march to war in the very direst of circumstances. These Elves, known as the Galadhrim, are some of the finest warriors in all of Middle-earth. Equipped with finely crafted Elven bows, and well-balanced glaives, they are exceptional fighters that have held back the forces of darkness for many centuries.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/5wHfOeL.jpg" class="card-img-top" alt="ME-dark-lord-sauron" />
+              <div class="card-body">
+                <h5 class="card-title">The Dark Lord Sauron™</h5>
+                <h5 class="card-title">$72.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Sauron is the Dark Lord, the Enemy, the Lord of the Ring. He is driven by a consuming desire to dominate all of Middle-earth and by a burning hatred of Elves, Men and all who stand in his way. It was Sauron who crafted the great Rings of Power and gave them as gifts to the rulers of the free races of Middle-earth. Yet still, he held the One Ring, the one that ruled all others, and it was through this mighty tool that Sauron enslaved the other ring bearers to his will. His vast armies of Orcs and other fell creatures were unleashed upon the world, but the Last Alliance of Men and Elves defeated his hordes and finally laid siege to his fortress of Barad-dûr in the land of Mordor. There, at a terrible price, the One Ring was cut from his hand and he was finally vanquished. Though not destroyed...</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/liH6dsP.jpg" class="card-img-top" alt="ME-black-riders" />
+              <div class="card-body">
+                <h5 class="card-title">The Black Riders</h5>
+                <h5 class="card-title">$84.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Ringwraiths, The Nazgûl, The Nine, The Black Riders – all are names for the terrifying undead servants of Sauron. Once they were the kings of the races of Men who were gifted rings of power by Sauron. However, they became corrupted by the power of the Dark Lord and fell into nothingness, their bodies faded and their minds twisted by malice and cruelty. They now serve Sauron unwaveringly, for they are utterly enslaved to his will.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/FOg1trw.jpg" class="card-img-top" alt="ME-tree-beard" />
+              <div class="card-body">
+                <h5 class="card-title">Treebeard, Mighty Ent</h5>
+                <h5 class="card-title">$130.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Greatest of the ancient race of Ents, Treebeard is immensely old and has potentially roamed the forests of Middle-earth from the dawn of the world. Since the loss of the Entwives, Treebeard has cared little for the goings-on of those outside Fangorn Forest, instead concerning himself with shepherding those under his care. Should a threat come to Fangorn, Treebeard will undoubtedly unleash his wrath against it.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Page 5 -->
+        <section class = "pages" id = "page5">
+          <div class = "container-fluid bg-light text-secondary d-flex justify-content-center">
+            <h2>Black Library</h2>
+          </div>
+          <!-- <div class = "container-fluid pt-3 bg-light text-secondary d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary m-2" onclick = "showPage('page1')">Return Home</button>
+          </div> -->
+          <!-- First Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/Jrs25Q5.jpg" class="card-img-top" alt="BL-advent-calander-2021" />
+              <div class="card-body">
+                <h5 class="card-title">Black Library Advent Calendar 2021</h5>
+                <h5 class="card-title">$100.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Advent calendars are part of the build-up to Christmas – but after a while, a chocolate or a small image from Terran mythology every day starts to get a bit boring. What if you could get a much larger piece of art from the worlds of Warhammer instead? Great news – you can!<br>This boxed set contains 25 large scale art prints featuring imagery from Black Library covers – including one with a deluxe Spot UV finish for Christmas Day. Each is individually sleeved, so you'll get a surprise every morning – the perfect way to celebrate each new day from the 1st to the 25th of December.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/UBgJTdQ.jpg" class="card-img-top" alt="BL-indomitus" />
+              <div class="card-body">
+                <h5 class="card-title">Indomitus</h5>
+                <h5 class="card-title">$20.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Drawn to a stricken world, the Ultramarines of Crusade Fleet Quintus, believed by many to be cursed, face a stark choice – fight a desperate last stand or doom a sector to warn the Imperium of the rise of a new Necron empire in the Pariah Nexus.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/SseGjwc.jpg" class="card-img-top" alt="BL-ts-and-other-stories" />
+              <div class="card-body">
+                <h5 class="card-title">Thunderstrike & Other Stories</h5>
+                <h5 class="card-title">$12</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Take your first steps into the adrenaline-fuelled fiction of the Mortal Realms with a thrilling collection of tales, including an action-packed novella pitting noble Stormcast Eternals against the sinister beings of Ghur.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/qgntML1.jpg" class="card-img-top" alt="BL-horus-rising" />
+              <div class="card-body">
+                <h5 class="card-title">Horus Rising - The Horus Heresy Book 1</h5>
+                <h5 class="card-title">$18.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">After thousands of years of expansion and conquest, the human Imperium is at its height. His dream for humanity accomplished, the Emperor hands over the reins of power to his Warmaster, Horus, and heads back to Terra.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/Qrc6cCs.jpg" class="card-img-top" alt="BL-urdesh-the-serpent-and-the-snake" />
+              <div class="card-body">
+                <h5 class="card-title">Urdesh: The Serpent and the Saint</h5>
+                <h5 class="card-title">$40.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Land Raider is the single most destructive weapon in the Adeptus Astartes' arsenal. Protected by bonded ceramite and adamantium armour, the Land Raider is impervious to all bar the most destructive weaponry. Equally impressive are its armaments - lascannon and heavy bolters allow the Land Raider to deliver punishing support fire capable of decimating enemy infantry and tanks alike. </p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/BmaY8KG.jpg" class="card-img-top" alt="BL-broken-city" />
+              <div class="card-body">
+                <h5 class="card-title">Broken City</h5>
+                <h5 class="card-title">$20.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Take another stroll through the back alleys and seedy dens of Varangantua, an Imperial hive city riddled with lawless gangs and filled with the ever-present stench of death. Start with the novella Bleedout, and finish up with six short stories from a variety of Black Library authors, both old and new.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Page 6 -->
+        <section class = "pages" id = "page6">
+          <div class = "container-fluid bg-light text-secondary d-flex justify-content-center">
+            <h2>Rule Books & Guides</h2>
+          </div>
+          <!-- <div class = "container-fluid pt-3 bg-light text-secondary d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary m-2" onclick = "showPage('page1')">Return Home</button>
+          </div> -->
+          <!-- First Row -->
+          <div class="card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/XVtvrYw.jpg" class="card-img-top" alt="RB-40k" />
+              <div class="card-body">
+                <h5 class="card-title">Warhammer 40,000 Core Rule Book</h5>
+                <h5 class="card-title">$110.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-title">There is no time for peace. No forgiveness. No respite. There is only war.</p>
+                <br />
+                <p class="card-text">The galaxy writhes in the mailed fist of all-consuming conflict. The Imperium of Mankind teeters on the brink of annihilation, beset upon all sides by heretic warlords, daemon-summoning witches and rapacious alien empires. In every star system and upon every planet, fierce battle rages as loyalists, heretics and aliens tear reality itself apart in their war for dominance. Every day the flames rise higher.This is a more terrible era than ever before, and there is no peace amongst the stars...</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/6ep1KYh.jpg" class="card-img-top" alt="RB-age-of-sigmar" />
+              <div class="card-body">
+                <h5 class="card-title">Warhammer Age of Sigmar Core Book</h5>
+                <h5 class="card-title">$110.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Age of Sigmar began with the thunderous arrival of the Stormcast Eternals, borne upon the heavenly storm of the God-King Sigmar Heldenhammer. They are great heroes, snatched up at the moment of death and magically reforged – these golden warriors are thrown into battle against all who would corrupt, decay, and destroy the Mortal Realms.</p>
+                <br />
+                <p class="card-text">While Sigmar and his pantheon of Order strive for prosperity in these dark times, the Great Necromancer Nagash marshals the forces of Death in a bid to claim every last soul for his own. Meanwhile, Kragnos leads the wild forces of Destruction in a savage rampage across the civilised world, all while the Chaos Gods prepare to conquer the last uncorrupted bastions in a world of conflict and upheaval. This is a new epoch, a time of mighty battles and unending war. This is the Age of Sigmar!</p>
+                <br />
+                <p class="card-text">The Age of Sigmar is an epic setting populated by myriad armies, powerful heroes, and magnificent monsters. It plays host to vast, realm-spanning wars between the forces of Order, Chaos, Death, and Destruction. In the Warhammer Age of Sigmar Core Book, you’ll not only learn the rich history of this war-torn age, but you’ll also find all the rules you need to evoke these epic stories on the tabletop.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/QPK0OBV.jpg" class="card-img-top" alt="RB-middle-earth" />
+              <div class="card-body">
+                <h5 class="card-title">Middle-Earth - Strategy Battle Game Rules Manual</h5>
+                <h5 class="card-title">$98.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Middle-earth Strategy Battle Game is the tabletop game for 2 or more players that allows you to play through the events from The Lord of the Rings™ and The Hobbit™ with your collection of Citadel and Forge World models. Take control of your favourite heroes, villains and armies, recreate scenes from the movies and books, and gather your forces together to do battle with your opponent in a test of wits and prowess. This 208-page hardback rules manual is a comprehensive guide to the hobby of building, painting and playing games with your Middle-earth models, whether you choose the forces of Good or Evil.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Page 7 -->
+        <section class = "pages" id = "page7">
+          <!-- First Row -->
+          <div class = "container-fluid bg-light text-secondary d-flex justify-content-center">
+            <h2>Most Popular</h2>
+          </div>
+          <!-- <div class = "container-fluid pt-3 bg-light text-secondary d-flex justify-content-center">
+            <button type="button" class="btn btn-secondary m-2" onclick = "showPage('page1')">Return Home</button>
+          </div> -->
+          <div class = "card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/27obF6s.jpg" class="card-img-top" alt="SM-Captain-Master" />
+              <div class="card-body">
+                <h5 class="card-title">Space Marine Captain with Master-crafted Heavy Bolt Rifle</h5>
+                <h5 class="card-title">$32.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Space Marines on the defence fight with a tenacious fury. Captains will take up heavy bolt rifles to lay down punishing fire and wear Gravis armour to withstand the foe's best attempts to dislodge them. Fighting in such a way, they are a symbol of the Space Marines' indomitable will to never fail.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/FOg1trw.jpg" class="card-img-top" alt="ME-tree-beard" />
+              <div class="card-body">
+                <h5 class="card-title">Treebeard, Mighty Ent</h5>
+                <h5 class="card-title">$130.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Greatest of the ancient race of Ents, Treebeard is immensely old and has potentially roamed the forests of Middle-earth from the dawn of the world. Since the loss of the Entwives, Treebeard has cared little for the goings-on of those outside Fangorn Forest, instead concerning himself with shepherding those under his care. Should a threat come to Fangorn, Treebeard will undoubtedly unleash his wrath against it.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/Uwd1r7P.jpg" class="card-img-top" alt="AOS-judicators" />
+              <div class="card-body">
+                <h5 class="card-title">Judicators</h5>
+                <h5 class="card-title">$105.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">The Judicators attack with speed and accuracy, with arcing, whistling volleys of arrows and bolts signalling their arrival in battle. The massed, howling forces of Chaos are their sworn, hated enemies, and they will soon feel the wrath of sigmarite crossbow bolts and hissing, crackling arrows of purest lightning. The Judicators disseminate their anger with stoic mercilessness, and leave nothing in their wake but death.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Second Row -->
+          <div class = "card-group">
+            <div class="card">
+              <img src="https://i.imgur.com/Jrs25Q5.jpg" class="card-img-top" alt="BL-advent-calander-2021" />
+              <div class="card-body">
+                <h5 class="card-title">Black Library Advent Calendar 2021</h5>
+                <h5 class="card-title">$100.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Advent calendars are part of the build-up to Christmas – but after a while, a chocolate or a small image from Terran mythology every day starts to get a bit boring. What if you could get a much larger piece of art from the worlds of Warhammer instead? Great news – you can!<br>This boxed set contains 25 large scale art prints featuring imagery from Black Library covers – including one with a deluxe Spot UV finish for Christmas Day. Each is individually sleeved, so you'll get a surprise every morning – the perfect way to celebrate each new day from the 1st to the 25th of December.</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/XVtvrYw.jpg" class="card-img-top" alt="RB-40k" />
+              <div class="card-body">
+                <h5 class="card-title">Warhammer 40,000 Core Rule Book</h5>
+                <h5 class="card-title">$110.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-title">There is no time for peace. No forgiveness. No respite. There is only war.</p>
+                <br />
+                <p class="card-text">The galaxy writhes in the mailed fist of all-consuming conflict. The Imperium of Mankind teeters on the brink of annihilation, beset upon all sides by heretic warlords, daemon-summoning witches and rapacious alien empires. In every star system and upon every planet, fierce battle rages as loyalists, heretics and aliens tear reality itself apart in their war for dominance. Every day the flames rise higher.This is a more terrible era than ever before, and there is no peace amongst the stars...</p>
+              </div>
+            </div>
+            <div class="card">
+              <img src="https://i.imgur.com/iC5xMu2.jpg" class="card-img-top" alt="SM-Combat-Patrol-Group" />
+              <div class="card-body">
+                <h5 class="card-title">Combat Patrol: Space Marines </h5>
+                <h5 class="card-title">$230.00</h5>
+                <a class="btn btn-secondary d-flex justify-content-center" href="#" role="button" onclick = "cartConfirm()">Buy Now<img src = "images/svg-icons/add-to-cart.svg" alt = "cart" /></a>
+                <br />
+                <p class="card-text">Wield the unstoppable might of the Angels of Death with Combat Patrol: Space Marines. This boxed set provides you with all the units you need to get started or build on an existing force. The contents of this set have been specifically chosen to provide you with an ideal Space Marines force for Combat Patrol-sized games – approximately 25 Power Level's worth of miniatures.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Footer -->
+        <footer class="py-3 my-4">
+          <!-- <ul class="nav justify-content-center border-bottom pb-3 mb-3 bg-white">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick = "showPage('page2')">Warhammer - 40,000</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick = "showPage('page3')">Warhammer - Age of Sigmar</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick = "showPage('page4')">Middle-Earth - Battle Strategy Game</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick = "showPage('page5')">Black Library</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" onclick = "showPage('page6')">Rule Books & Guides</a></li>
+          </ul> -->
+          <p class="text-center text-muted">&copy; 2021 Games Workshop</p>
+        </footer>
+    </body>
+</html>
